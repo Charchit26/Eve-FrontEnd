@@ -68,7 +68,7 @@
 					console.log(data)
 				}
 				if(isValidEmailAddress(text)){
-					if(checkEmail(text)){
+					if(checkForEmail(text)){
 						data="Registered "+text
 					}
 					else{
