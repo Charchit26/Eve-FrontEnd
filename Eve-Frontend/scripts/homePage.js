@@ -54,7 +54,7 @@
 					console.log(data)
 				}
 				$.ajax({
-					url: 'http://GOooOGLE-PC:8080/msg',
+					url: 'http://203.92.52.116:9001/msg',
 					type: 'post',
 					data: data,
 					success: function (data) {
