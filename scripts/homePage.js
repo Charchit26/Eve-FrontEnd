@@ -16,6 +16,8 @@
         return this;
     };
     $(function () {
+		var flagName=false;
+		var flagEmployer=false;
         var getMessageText, message_side, sendMessage;
         message_side = 'right';
         getMessageText = function () {
@@ -75,12 +77,24 @@
 						data="Unregistered "+text
 					}
 				}
+				if(flagName==true){
+					data="Name "+text;
+				}
+				if(flagEmployer==true){
+					data="Employer "+text;
+				}
 				$.ajax({
 					url: 'http://203.92.52.116:9001/msg',
 					type: 'post',
 					data: data,
 					success: function (data) {
 						sendMessage(data, true);
+						if(data=="Ohh, It seems you are not registered yet...Please enter your name"){
+							flagName=true;
+						}
+						if(data.indexOf("Please enter your employer's name")>=0){
+							flagEmployer=true;
+						}
 					},
 					error: function (data) {
 						console.log("error sending the jquery post req from front end")
