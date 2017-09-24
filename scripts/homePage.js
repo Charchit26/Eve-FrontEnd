@@ -71,10 +71,10 @@
 				}
 				if(isValidEmailAddress(text)){
 					if(checkForEmail(text)){
-						data="Registered "+text
+						data="Registered"
 					}
 					else{
-						data="Unregistered "+text
+						data="Unregistered"
 					}
 				}
 				if(flagName==true){
