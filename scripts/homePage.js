@@ -43,7 +43,7 @@
 		};
 		checkForEmail = function(val){
 			console.log("in checkEmail");
-			if (val=="charchit@google.com" || val=="pratikpawar@google.com" || val=="Arivou.Tandabany@team.telstra.com") {
+			if (val.toLowerCase()=="charchit@google.com".toLowerCase() || val.toLowerCase()=="pratikpawar@google.com".toLowerCase() || val.toLowerCase()=="Arivou.Tandabany@team.telstra.com".toLowerCase()) {
 				console.log("registered user")
 				 return true;
 			}
