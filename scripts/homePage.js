@@ -92,8 +92,12 @@
 						if(data=="Ohh, It seems you are not registered yet...Please enter your name"){
 							flagName=true;
 						}
-						if(data.indexOf("Please enter your employer's name")>=0){
+						else if(data.indexOf("Please enter your employer's name")>=0){
 							flagEmployer=true;
+						}
+						else{
+							flagName=false;
+							flagEmployer=false;
 						}
 					},
 					error: function (data) {
