@@ -4,7 +4,7 @@
 
 body {
   background-color: black;
-  background: url("../img/new.jpg") no-repeat;
+  background: url("../img/telstra.jpg") no-repeat;
   font-family: "Calibri", "Roboto", sans-serif;
   -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -33,7 +33,7 @@ opacity: 0.5;     */
 }
 
 .top_menu {
-  background-color: #fff;
+  background-color: #ddf;
   width: 100%;
   padding: 20px 0 15px;
   box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
@@ -61,7 +61,7 @@ opacity: 0.5;     */
 }
 .top_menu .title {
   text-align: center;
-  color: #bcbdc0;
+  color: black;
   font-size: 20px;
 }
 
