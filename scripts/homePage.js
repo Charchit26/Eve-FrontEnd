@@ -17,10 +17,7 @@ $( document ).ready(function() {
 	});
 
 	sendMessage = function (text, from_bot) {
-				if(from_bot)
-					showMessageDialog(text, "right");
-				else
-					showMessageDialog(text, "left");
+				showMessageDialog(text, "right");
 				console.log(text)
 				var rfidFlag = false;
 				var emailFlag = false;
@@ -32,10 +29,10 @@ $( document ).ready(function() {
 				$messages = $('.messages');
 				//message_side = message_side === 'left' ? 'right' : 'left';
 				if(from_bot === true){
-					message_side = 'left';
+					message_side = 'right';
 				}
 				else{
-					message_side = 'right';
+					message_side = 'left';
 					var statement=text;
 					rfidFlag=checkForRFID(text);
 					emailFlag=isValidEmailAddress(text);
