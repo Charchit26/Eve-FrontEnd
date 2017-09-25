@@ -4,7 +4,7 @@
 
 body {
   background-color: black;
-  background: url("../img/telstra.jpg") no-repeat;
+  background: url("../img/3.jpg") no-repeat;
   font-family: "Calibri", "Roboto", sans-serif;
   -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -19,7 +19,7 @@ body {
   height: 500px;
   border-radius: 10px;
   background-color: #fff;
-  left: 50%;
+  left: 30%;
   top: 55%;
   transform: translateX(-50%) translateY(-50%);
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
