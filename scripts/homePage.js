@@ -5,6 +5,7 @@ $( document ).ready(function() {
 	flagEmployer=false;
 	updateUser=false;
     $('.send_message').click(function (e) {
+		$('.message_input').focus();
 		return sendMessage(getMessageText(), false);
 		//add focus
 	});
@@ -16,7 +17,10 @@ $( document ).ready(function() {
 	});
 
 	sendMessage = function (text, from_bot) {
-				showMessageDialog(text, from_bot);
+				if(from_bot)
+					showMessageDialog(text, "right");
+				else
+					showMessageDialog(text, "left");
 				console.log(text)
 				var rfidFlag = false;
 				var emailFlag = false;
